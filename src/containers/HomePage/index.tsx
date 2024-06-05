@@ -1,10 +1,10 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 
 interface IProps {
   data?: any
 }
 
-const HomePage: FC<IProps> = () => {
+export const HomePage: FC<IProps> = () => {
   return (
     <>
       <div>Home page 🌏 </div>
@@ -12,5 +12,3 @@ const HomePage: FC<IProps> = () => {
     </>
   )
 }
-
-export default HomePage
