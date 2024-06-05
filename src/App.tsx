@@ -12,7 +12,6 @@ function App() {
     <div className="App">
       <QueryClientProvider client={queryClient}>
         <GlobalStyles />
-
         <Router history={history}>
           <Switch>
             <Route exact path="/" component={HomePage} />

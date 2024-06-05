@@ -39,7 +39,7 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': 2,
         '@typescript-eslint/explicit-module-boundary-types': 0,
         'react/jsx-uses-react': 1,
-        'react/react-in-jsx-scope': 1,
+        'react/react-in-jsx-scope': 0,
       },
     },
   ],
