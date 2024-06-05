@@ -1,4 +1,4 @@
-## React TS template :books:
+## Ecommerce  :books:
 
 ## Basic commands :wrench:
 
@@ -15,7 +15,7 @@
 
 | tech              | description               |
 | ----------------- | ------------------------- |
-| `react`           | js library                |
+| `react`           | js component library      |
 | `axios`           | promise based HTTP client |
 | `react-query`     | data fetching library     |
 | `eslint/prettier` | linting                   |
