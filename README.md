@@ -2,21 +2,22 @@
 
 ## Basic commands :wrench:
 
-|     commands   |      description           |
-|----------------|----------------------------|
+| commands       | description                |
+| -------------- | -------------------------- |
 | `yarn start`   | run the development server |
 | `yarn install` | install dependencies       |
-| `yarn lint`	   | run linter                 |
+| `yarn lint`    | run linter                 |
 | `yarn remove`  | remove a package           |
 | `yarn build`   | build application          |
+| `yarn test`    | run test cases             |
 
 ## Tech Stacks :package:
 
-|     tech          |      description           |
-|-------------------|----------------------------|
-| `react`           | js library                 |
-| `axios`           | promise based HTTP client  |
-| `react-query`     | data fetching library      |
-| `eslint/prettier` | linting                    |
+| tech              | description               |
+| ----------------- | ------------------------- |
+| `react`           | js library                |
+| `axios`           | promise based HTTP client |
+| `react-query`     | data fetching library     |
+| `eslint/prettier` | linting                   |
 
 
