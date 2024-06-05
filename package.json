@@ -2,6 +2,18 @@
   "name": "react-ts-template",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject",
+    "lint": "eslint './src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix",
+    "git-add": "git add .",
+    "typecheck": "tsc-files --noEmit",
+    "postformat": "prettier . --write",
+    "format": "eslint -c .eslintrc.js --ignore-path .eslintignore --fix"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -21,14 +33,39 @@
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "jest",
-    "eject": "react-scripts eject",
-    "lint": "eslint './src/**/*.{ts,tsx}'",
-    "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix"
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "babel-jest": "^29.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "jest": "^29.7.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.0",
+    "react-test-renderer": "^18.3.1",
+    "ts-jest": "^29.1.4",
+    "ts-node": "^10.9.2"
   },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "yarn stylelint",
+      "yarn format",
+      "git-add"
+    ],
+    "*.{ts,tsx}": [
+      "yarn stylelint",
+      "yarn format",
+      "git-add"
+    ]
+  },
+  "pre-commit": [
+    "lint-staged"
+  ],
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -46,32 +83,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/core": "^7.24.7",
-    "@babel/preset-env": "^7.24.7",
-    "@babel/preset-typescript": "^7.24.7",
-    "@typescript-eslint/eslint-plugin": "^4.24.0",
-    "@typescript-eslint/parser": "^4.24.0",
-    "babel-jest": "^29.7.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.23.2",
-    "husky": "^6.0.0",
-    "jest": "^29.7.0",
-    "lint-staged": "^11.0.0",
-    "prettier": "^2.3.0",
-    "react-test-renderer": "^18.3.1",
-    "ts-jest": "^29.1.4",
-    "ts-node": "^10.9.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix"
   }
 }
