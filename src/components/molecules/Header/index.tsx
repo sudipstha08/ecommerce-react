@@ -1,5 +1,8 @@
 import { FC } from 'react'
+import styled from 'styled-components'
+
+const StyledHeader = styled.header``
 
 export const Header: FC = () => {
-  return <div>index</div>
+  return <StyledHeader>index</StyledHeader>
 }

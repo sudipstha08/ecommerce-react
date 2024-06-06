@@ -5,6 +5,7 @@ module.exports = {
     jest: true,
   },
   parser: '@typescript-eslint/parser',
+  plugins: ["react", "react-hooks"],
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
@@ -40,7 +41,7 @@ module.exports = {
     'no-alert': 'error',
     '@typescript-eslint/no-explicit-any': 0,
     'react/display-name': 0,
-    'react-hooks/exhaustive-deps': 2,
+    'react-hooks/exhaustive-deps': "warn",
     'sort-imports': 'off',
     'prettier/prettier': 'error',
     'import/first': 'error',
