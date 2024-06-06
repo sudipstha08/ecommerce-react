@@ -1,4 +1,4 @@
-## Ecommerce  :books:
+## Ecommerce :books:
 
 ## Basic commands :wrench:
 
@@ -11,15 +11,20 @@
 | `yarn build`     | build application          |
 | `yarn test`      | run test cases             |
 
+### How to get started ?
+
+- Install dependencies `yarn install`
+- Run development server `yarn start-dev`
+
 ## Tech Stacks :package:
 
-| tech              | description               |
-| ----------------- | ------------------------- |
-| `react`           | js component library      |
-| `axios`           | promise based HTTP client |
-| `react-query`     | data fetching library     |
-| `eslint/prettier` | linting                   |
+| tech                    | description           |
+| ----------------------- | --------------------- |
+| `react`                 | js component library  |
+| `axios`                 | HTTP client           |
+| `react-query`           | data fetching library |
+| `eslint/prettier`       | linting               |
+| `jest`                  | testing               |
+| `react-testing-library` | testing               |
 
 Happy coding :v:
-
-
